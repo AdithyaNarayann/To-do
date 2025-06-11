@@ -1,0 +1,36 @@
+.mid{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.undermid{
+    display: flex;
+    gap: 10px;
+}
+.mid-left{
+    display: flex;
+    flex: 1;
+    margin-left: 5px;
+}
+.mid-right{
+
+}
+.inputtask{
+    box-sizing: border-box;
+    background-color: #559187;
+    border: 1.5px solid #9DC99D;
+    border-radius: 6px;
+    padding: 3px 8px;
+    display: flex;
+    flex: 1;
+    color: white;
+}
+input::placeholder{
+    color: white;
+}
+.plusimg{
+    background-color: #9DC99D;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+}

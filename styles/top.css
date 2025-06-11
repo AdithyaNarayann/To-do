@@ -9,7 +9,7 @@ body{
 }
 .sec{
     border: 1px solid black;
-    padding: 10px;
+    padding: 20px 25px;
     border-radius: 10px;
     background-color: #164A41;
 }   
@@ -18,11 +18,10 @@ body{
 .mid{
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    
     width: 350px;
     border-radius: 20px;
     background-color: #164A41;
-    margin-bottom: 10px;
 }
 .top{
     box-sizing: border-box;
@@ -38,7 +37,7 @@ body{
     align-items: center;
 }
 .top-left{
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .top-left h1{
     font-size: 32px;
