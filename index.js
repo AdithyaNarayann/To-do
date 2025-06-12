@@ -4,6 +4,7 @@ bottommain.className = "bottom-main"
 tasksec.append(bottommain)
 const listoftasks = document.createElement("ul")
 listoftasks.className = "listoftasks"
+const keep = document.getElementById("keep")
 let i = 0
 let j = 0
 const addbutton = document.getElementById("addbutton")
@@ -13,12 +14,20 @@ addbutton.addEventListener("click",()=>{
 })
 function newtask(){
     const taskcom = document.getElementById("taskcom")
+    const progressFill = document.querySelector(".progress-fill")
     taskcom.textContent = `${j}/${i}`
+    progressFill.style.width = i === 0 ? "0%" : `${(j/i)*100}%`
+
     const input = document.getElementById("theinput")
     const task = document.createElement("li")
     task.className = "oneofthetasks"
     const deletebutton = document.createElement("button")
-    deletebutton.textContent = "delete"
+    deletebutton.className = "delete"
+    const link = document.createElement("img")
+    deletebutton.append(link)
+    link.src = "Screenshot 2025-06-12 210508.png"
+    link.className = "img-link"
+
     const circle = document.createElement("span")
     circle.className = "circle"
     const text = document.createElement("span")
@@ -37,8 +46,10 @@ function newtask(){
     bottomright.append(deletebutton)
     task.append(bottomleft,bottomright)
     listoftasks.append(task)
+
     circle.addEventListener("click",()=>{
         const waschecked = circle.classList.toggle("checked");
+        keep.textContent = "Keep it up!"
         if(waschecked){
             j++
         }
@@ -46,7 +57,12 @@ function newtask(){
             j--
         }
         taskcom.textContent = `${j}/${i}`
+        progressFill.style.width = i === 0 ? "0%" : `${(j/i)*100}%`
+        if(j===0){
+            keep.textContent = "Get Moving!"
+        }
     })
+
     deletebutton.addEventListener("click",()=>{
         if (circle.classList.contains("checked")){
             j--
@@ -54,6 +70,7 @@ function newtask(){
         i--
         task.remove()
         taskcom.textContent =`${j}/${i}`
+        progressFill.style.width = i === 0 ? "0%" : `${(j/i)*100}%`
     })
 
     input.value=""

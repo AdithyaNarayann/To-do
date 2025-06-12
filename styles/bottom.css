@@ -46,4 +46,15 @@
     top: 2.7px;
     left: 2.7px;
 }
-
+.img-link{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.delete{
+    width: 40px;
+    height: 30px;
+    border: none;
+    background-color: #559187;
+    margin-right: -5px;
+}
