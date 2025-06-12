@@ -37,12 +37,13 @@
     position: relative;
 }
 .circle.checked::after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: yellow;
-  border-radius: 50%;
-  position: absolute;
-  top: 4px;
-  left: 4px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #F1B24A;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.7px;
+    left: 2.7px;
 }
+
