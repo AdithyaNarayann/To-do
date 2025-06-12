@@ -4,8 +4,9 @@ bottommain.className = "bottom-main"
 tasksec.append(bottommain)
 const listoftasks = document.createElement("ul")
 listoftasks.className = "listoftasks"
-
+let i = 0
 function newtask(){
+    i++
     const input = document.getElementById("theinput")
     const task = document.createElement("li")
     task.className = "oneofthetasks"
@@ -31,7 +32,18 @@ function newtask(){
     listoftasks.append(task)
     circle.addEventListener("click",()=>{
         circle.classList.toggle("checked");
-        console.log(task.classList);
+        console.log(circle.classList)
+        let i = 0
+        if(circle.className == "checked"){
+            i++
+        }
+        else{
+            if(i!==0){
+                i--
+            }
+            else{
+            }
+        }
     })
     deletebutton.addEventListener("click",()=>{
         task.remove()
@@ -39,6 +51,6 @@ function newtask(){
     input.value=""
     input.focus()
 }
-
+console.log(i)
 bottommain.append(listoftasks)
 
