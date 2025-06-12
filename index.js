@@ -1,6 +1,9 @@
 const tasksec = document.getElementById("bottom")
+const bottommain = document.createElement("div")
+bottommain.className = "bottom-main"
+tasksec.append(bottommain)
 const listoftasks = document.createElement("ul")
-tasksec.append(listoftasks)
+bottommain.append(listoftasks)
 listoftasks.className = "listoftasks"
 
 function newtask(){

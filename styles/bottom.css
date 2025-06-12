@@ -1,8 +1,6 @@
 .listoftasks{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -14,4 +12,12 @@
     width: 330px;
     padding: 5px 8px;
     border-radius: 6px;
+    overflow: hidden;
+    color: white;
+    font-size: 14px;
+    display: flex;
+}
+.bottommain{
+    display: flex;
+    flex-direction: row;
 }
