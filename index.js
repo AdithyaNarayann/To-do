@@ -25,7 +25,7 @@ function newtask(){
     deletebutton.className = "delete"
     const link = document.createElement("img")
     deletebutton.append(link)
-    link.src = "Screenshot 2025-06-12 210508.png"
+    link.src = "icons/Screenshot 2025-06-12 210508.png"
     link.className = "img-link"
 
     const circle = document.createElement("span")
