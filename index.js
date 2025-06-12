@@ -5,8 +5,15 @@ tasksec.append(bottommain)
 const listoftasks = document.createElement("ul")
 listoftasks.className = "listoftasks"
 let i = 0
-function newtask(){
+let j = 0
+const addbutton = document.getElementById("addbutton")
+addbutton.addEventListener("click",()=>{
     i++
+    newtask()
+})
+function newtask(){
+    const taskcom = document.getElementById("taskcom")
+    taskcom.textContent = `${j}/${i}`
     const input = document.getElementById("theinput")
     const task = document.createElement("li")
     task.className = "oneofthetasks"
@@ -31,26 +38,25 @@ function newtask(){
     task.append(bottomleft,bottomright)
     listoftasks.append(task)
     circle.addEventListener("click",()=>{
-        circle.classList.toggle("checked");
-        console.log(circle.classList)
-        let i = 0
-        if(circle.className === ['circle', 'checked']){
-            i++
+        const waschecked = circle.classList.toggle("checked");
+        if(waschecked){
+            j++
         }
         else{
-            if(i!==0){
-                i--
-            }
-            else{
-            }
+            j--
         }
+        taskcom.textContent = `${j}/${i}`
     })
     deletebutton.addEventListener("click",()=>{
+        if (circle.classList.contains("checked")){
+            j--
+        }
+        i--
         task.remove()
+        taskcom.textContent =`${j}/${i}`
     })
+
     input.value=""
     input.focus()
 }
-console.log(i)
 bottommain.append(listoftasks)
-
