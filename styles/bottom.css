@@ -12,6 +12,7 @@
     list-style: none;
     margin-bottom: 10px;
     width: 330px;
+    height: 30px;
     padding: 5px 8px;
     border-radius: 6px;
     overflow: hidden;
@@ -57,4 +58,12 @@
     border: none;
     background-color: #559187;
     margin-right: -5px;
+}
+.text{
+    font-size: 14px;
+
+}
+.bottomleft{
+    display: flex;
+    align-items: center;
 }
