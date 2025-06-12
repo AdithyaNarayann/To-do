@@ -34,7 +34,7 @@ function newtask(){
         circle.classList.toggle("checked");
         console.log(circle.classList)
         let i = 0
-        if(circle.className == "checked"){
+        if(circle.className === ['circle', 'checked']){
             i++
         }
         else{
