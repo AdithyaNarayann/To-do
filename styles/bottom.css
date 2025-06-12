@@ -10,14 +10,13 @@
     border: 1px solid black;
     background-color: #559187;
     list-style: none;
-    margin-bottom: 10px;
-    width: 330px;
-    height: 30px;
+    margin-bottom: 15px;
+    width: 644px;
+    height: 50px;
     padding: 5px 8px;
     border-radius: 6px;
     overflow: hidden;
     color: white;
-    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,31 +38,34 @@
 }
 .circle.checked::after {
     content: '';
-    width: 15px;
-    height: 15px;
+    width: 16.25px;
+    height: 16px;
     background-color: #F1B24A;
     border-radius: 50%;
     position: absolute;
-    top: 2.7px;
-    left: 2.7px;
+    top: 2.3px;
+    left: 2.3px;
 }
 .img-link{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 30px;
 }
 .delete{
-    width: 40px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border: none;
     background-color: #559187;
-    margin-right: -5px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 .text{
-    font-size: 14px;
+    font-size: 22px;
 
 }
 .bottomleft{
     display: flex;
     align-items: center;
+    gap: 6px;
+    margin-left: 12px;
 }

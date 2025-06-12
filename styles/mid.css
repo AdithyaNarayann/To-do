@@ -1,15 +1,17 @@
 .mid{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 18px;
 }
 .undermid{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 .mid-left{
     display: flex;
     flex: 1;
     margin-left: 5px;
+    
 }
 .mid-right{
 
@@ -19,10 +21,13 @@
     background-color: #559187;
     border: 1.5px solid #9DC99D;
     border-radius: 7px;
-    padding: 3px 8px;
+    padding: 6px 8px;
     display: flex;
     flex: 1;
     color: white;
+    font-size: 20px;
+    height: 45px;
+    padding-left: 15px;
 }
 input::placeholder{
     color: white;
@@ -30,7 +35,10 @@ input::placeholder{
 .plusimg{
     background-color: #9DC99D;
     color: white;
-    font-size: 20px;
+    font-size: 46px;
     border: none;
     border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
 }
